@@ -26,9 +26,9 @@ from network.models.upsampler import LatentUpSampler
 upsampler = LatentUpSampler.from_pretrained(UPSAMPLER_PATH, torch_dtype=dtype).to(device)
 ```
 
-Latent Upsampler model is under `weights` folder.
+Latent Upsampler model is under `weights` folder. Example:  
 ```python
-MODEL_PATH = "weights/FLUX-VAE-scaler"
+UPSAMPLER_PATH = "weights/FLUX-VAE-scaler"
 ```
 
 #### FLUX pipeline:
