@@ -26,12 +26,10 @@ from network.models.upsampler import LatentUpSampler
 upsampler = LatentUpSampler.from_pretrained(UPSAMPLER_PATH, torch_dtype=dtype).to(device)
 ```
 
-Latent Upsampler model urls:
-- FLUX
-- Stable Diffusion 3
-- Stable Diffusion XL
-- Stable Diffusion
-- CogView4
+Latent Upsampler model is under `weights` folder.
+```python
+MODEL_PATH = "weights/FLUX-VAE-scaler"
+```
 
 #### FLUX pipeline:
 The FLUX pipeline supports all FLUX.1 text to image models, including FLUX.1-dev, FLUX.1-schnell, and FLUX.1-Krea-dev.  
