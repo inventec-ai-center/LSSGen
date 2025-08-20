@@ -1,4 +1,8 @@
-# Copyright 2025 Inventec Corporation, the CogVideoX team, Tsinghua University & ZhipuAI and The HuggingFace Team.
+# This code is modified from diffusers library
+# Copyright 2025 Inventec Corporation. All rights reserved.
+#
+# Original license:
+# Copyright 2025 the CogVideoX team, Tsinghua University & ZhipuAI and The HuggingFace Team.
 # All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");

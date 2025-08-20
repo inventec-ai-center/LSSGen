@@ -110,4 +110,4 @@ python inference_dyn_scaling_t2i.py <GENEVAL_PROMPTS_JSONL> \
 - `Start Sigma`: The initial sigma value for the denoising process. A value for controling the trade-off between speed and quality. 0.75 is optimal for best quality, but you can try other values like 0.67 for faster generation.  
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is only for research or education purposes, and not freely available for commercial use or redistribution. This intellectual property belongs to the Inventec Corporation. Licensing is possible if you want to use the code for commercial use. For scientific use, please reference this repository together with the relevant publication.

@@ -1,4 +1,7 @@
-# This code is modified from diffusers library by Inventec Corporation.
+# This code is modified from diffusers library
+# Copyright 2025 Inventec Corporation. All rights reserved.
+#
+# Original license:
 # Copyright 2025 Stability AI, The HuggingFace Team and The InstantX Team. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");

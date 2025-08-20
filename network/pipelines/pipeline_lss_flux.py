@@ -1,4 +1,8 @@
-# Copyright 2025 Inventec Corporation, Black Forest Labs and The HuggingFace Team. All rights reserved.
+# This code is modified from diffusers library
+# Copyright 2025 Inventec Corporation. All rights reserved.
+#
+# Original license:
+# Copyright 2025 Black Forest Labs and The HuggingFace Team. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
