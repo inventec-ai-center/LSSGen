@@ -1,0 +1,21 @@
+{
+  "_class_name": "LatentUpSampler",
+  "_diffusers_version": "0.33.0.dev0",
+  "act_fn": "silu",
+  "block_out_channels": [
+    128,
+    64
+  ],
+  "in_channels": 16,
+  "interpolate": "bilinear",
+  "is_up_samples": [
+    true,
+    false
+  ],
+  "norm_num_groups": 32,
+  "out_channels": 16,
+  "strides": [
+    2,
+    1
+  ]
+}
