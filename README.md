@@ -2,7 +2,7 @@
 This repository contains the code and resources for the paper "Leveraging Latent Space Scaling in Flow and Diffusion for Efficient Text to Image Generation".  
 Accepted at ICCV AIGENS workshop 2025.  
 
-[![arXiv](https://img.shields.io/badge/arXiv-2507.16154-b31b1b.svg)](https://arxiv.org/abs/2507.16154) [![alphaXiv](https://img.shields.io/badge/alphaXiv-2507.16154-009639.svg)](https://www.alphaxiv.org/abs/2507.16154) [![CVF](https://img.shields.io/badge/CVF-Open%20Access-orange.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2507.16154-b31b1b.svg)](https://arxiv.org/abs/2507.16154) [![alphaXiv](https://img.shields.io/badge/alphaXiv-2507.16154-009639.svg)](https://www.alphaxiv.org/abs/2507.16154) [![CVF](https://img.shields.io/badge/CVF-Open%20Access-orange.svg)](https://openaccess.thecvf.com/content/ICCV2025W/AIGENS/papers/Tang_LSSGen_Leveraging_Latent_Space_Scaling_in_Flow_and_Diffusion_for_ICCVW_2025_paper.pdf) [![CVF Supplementary](https://img.shields.io/badge/CVF-Supplementary-orange.svg)](https://openaccess.thecvf.com/content/ICCV2025W/AIGENS/supplemental/Tang_LSSGen_Leveraging_Latent_ICCVW_2025_supplemental.pdf)
 
 ## Abstract
 TL;DR: This framework accelerates text-to-image generation by shifting the early timesteps of diffusion and flow to a lower resolution in latent space. Compared to traditional methods, it achieves better image quality.  
@@ -12,7 +12,7 @@ To address this, we propose **Latent Space Scaling Generation (LSSGen)**, a fram
 ## Requirements
 - Python 3.8+
 - PyTorch 2.0+
-- Diffusers
+- Diffusers 0.33.*
 
 ## Usage
 ### Diffusers style pipelines
@@ -105,7 +105,20 @@ python inference_dyn_scaling_t2i.py <GENEVAL_PROMPTS_JSONL> \
 
 ## Parameters
 - `Shorten Intermediate Steps`: If set to `True`, the LSSGen will shorten the intermediate steps when resolution is lower than the standard resolution. This is useful for speeding up the generation process while maintaining quality in flow based models.  
-- `Start Sigma`: The initial sigma value for the denoising process. A value for controling the trade-off between speed and quality. 0.75 is optimal for best quality, but you can try other values like 0.67 for faster generation.  
+- `Start Sigma`: The initial sigma value for the denoising process. A value for controling the trade-off between speed and quality. 0.75 is optimal for best quality, but you can try other values like **0.667** for faster generation.
+
+## Citation
+Please cite our work if you use this repository in your research:  
+```
+@InProceedings{Tang_2025_ICCV,
+    author    = {Tang, Jyun-Ze and Hsu, Chih-Fan and Li, Jeng-Lin and Chang, Ming-Ching and Chen, Wei-Chao},
+    title     = {LSSGen: Leveraging Latent Space Scaling in Flow and Diffusion for Efficient Text to Image Generation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+    month     = {October},
+    year      = {2025},
+    pages     = {5048-5057}
+}
+```
 
 ## License
 This project is only for research or education purposes, and not freely available for commercial use or redistribution. This intellectual property belongs to the Inventec Corporation. Licensing is possible if you want to use the code for commercial use. For scientific use, please reference this repository together with the relevant publication.
